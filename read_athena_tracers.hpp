@@ -1,5 +1,8 @@
+#include <vector>
 #ifndef  READ_ATHENA_TRACERS_H
 #define  READ_ATHENA_TRACERS_H
+
+using namespace std;
 
 struct tracer
 {

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "read_athena_header.hpp"
 #include "read_athena_tracers.hpp"
 
@@ -22,12 +23,12 @@ long read_athena_tracers(char fname[], vector<tracer> *t)
 
 
   //buffer for storing tracers into the tracer vector *t
-  tracer t_in;
+  tracer tin;
 
   /*open tracer file*/
   if(!(fp = fopen(fname,"r")))
   {
-    printf("Error opening %s in load tracers (fdir=%s, filebase=%s, fdout=%s.\n",filename,fdir,filebase,fdir_out);
+    printf("Error opening %s in load tracers.\n",fname);
     fflush(stdout); 
   }
 
