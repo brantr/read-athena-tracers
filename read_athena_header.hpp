@@ -1,3 +1,4 @@
+#include <vector>
 #ifndef READ_ATHENA_HEADER_H
 #define READ_ATHENA_HEADER_H
 struct AthenaHeaderDef
